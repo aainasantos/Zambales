@@ -1,0 +1,60 @@
+<%- include("partials/header.ejs"); %>
+</head>
+<body>
+<%- include("partials/nav.ejs"); %>
+                  <li class="nav-item">
+                  <strong class="nav-link" name="loginName" >Hi <%= fName  %></strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+<!-- Home -->
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="heading">Explore Zambales and Find Great Places</h1>
+                 <div>
+                  <a class="gotoweather" href="/lakwatsera_<%=userID%>/weather">Check weather update here!</a>
+                 </div>
+        </div>
+        <div class="col-md-6 slider">
+            <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/home/sbma.png" class="d-block w-100 " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/home/subic.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/home/zam2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+</section>
+<!-- Home -->
+
+<%- include("partials/middle.ejs"); %>
+
+<!-- MAP and Weather -->
+<section id="map-weather">
+<div class="row">
+  <div class="col-md-6">
+          <div ><p>🌞 As with any location, you'd want to consider the weather and peak conditions before you go. Since the province covers a large area in Central Luzon, the weather in Zambales varies on which town you visit. !</p>
+            <a href="/lakwatsera_<%=userID%>/weather">Check weather update here!</a>
+          </div>
+  </div>
+  <div class="col-md-6">
+    <img class="map" src="images/map.jpg" alt="map-img">
+  </div>
+
+</div>
+</section>
+<!-- MAP and Weather -->
+
+<%- include("partials/footer.ejs"); %>

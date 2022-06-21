@@ -1,0 +1,230 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height:100%;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+    line-height: 2;
+}
+
+nav {
+    padding:.5% 10%;
+    text-align: left;
+    background-color: #EFFFFD;
+    position: fixed;
+    width: 100%;
+    
+}
+
+
+header {
+    background-image: url("https://img.freepik.com/free-vector/romantic-cherry-blossom-background-flying-flowers-pink-blue-background-illustration_281653-402.jpg?size=626&ext=jpg&ga=GA1.2.987025481.1654659659");
+    background-size: cover;
+    color: #3EC1D3;
+    display: flex;
+    aspect-ratio: 10/7;
+    width: 100vw;
+    height: 90vh;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    padding-top: 3%;
+    width: max-content;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Concert One', cursive;
+    font-weight: normal;
+    color: #30E3CA;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    color: #71C9CE;
+}
+
+hr {
+    border: dotted 10px;
+    border-bottom: none;
+    color: #D3EBCD;
+    margin: auto;
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 3%;
+    font-size: clamp(.7rem, 2vw, 1rem);
+}
+
+footer a {
+    margin: 1%;
+}
+
+footer a:hover {
+    color:#47bcf1;
+}
+
+/* FLEXBOX */
+
+.flexblock{
+    display: flex;
+    margin: auto;
+}
+
+/* NAVIGATION BAR */
+.nav_link {
+    padding: 3%;
+    color: #D5D8B5;
+    font-size: clamp(.6rem, 1vw, 2rem);
+}
+
+.nav__title{
+    position: absolute;
+    right: 10%;
+    font-size: clamp(.8rem, .8vw, 3rem);
+}
+
+.nav__img{
+    width: 20px;
+}
+
+
+/* TOP SECTION */
+
+.front {
+    margin: auto;
+    padding-bottom: 3%; 
+    font-size: clamp(1rem, 2vw, 1.5rem);   
+    width: 60%;
+}
+
+.front__title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    width: 100%;
+}
+
+.front__img {
+    width: 100%;
+    padding: 20% 20% 10% 0;
+    width: 80vh;
+    height: 80%;
+}
+
+
+/* MIDDLE SECTION */
+
+.profile__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%; 
+    margin-bottom:  5%;  
+}
+
+.profile__text {
+    width: 80%;
+    margin: auto;
+}
+
+#profile {
+    padding: 10%;
+}
+
+/* BOTTOM SECTION */
+.info {
+    padding: 7% 0 5%;
+    margin: auto;
+}
+
+.info__img {
+    height: 30vh;
+    width: 80%;
+    padding-top: 3%;
+}
+
+/* CONTACT SECTION */
+#contact {
+text-align: left;
+padding:5% 10% 3%;
+font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+    .nav__title{
+        position: absolute;
+        right: 3%;
+        margin: auto;
+    }
+    .info__img{
+        display: none;
+    }
+    
+    /* CONTACT SECTION */
+    #contact{
+        padding-bottom: 5%;
+    }
+}
+
+@media ( max-width: 960px) {
+
+    nav {
+        padding-left: 10%;
+     }
+
+     .flexblock {
+        flex-direction: column;
+     }
+
+     .front, .info {
+         width: 80%;
+         margin: auto;
+     }
+
+     .front__img {
+        display: none;   
+    }   
+
+    #profile {
+        padding-top: 30%;
+    }
+ 
+}
+
+@media (max-height: 460px) {
+    nav{
+        padding: 0% 10%;
+    }
+    .nav__title, .nav__title{
+        font-size:clamp(.8rem, 1vh, 1rem);
+    }
+    h1 {
+        padding-bottom: 0 ;
+        margin: auto;
+        font-size:clamp(1.5rem, 8vh, 6rem);
+    }
+    .front {
+        font-size: clamp(.5rem, 4vh, 2rem);
+    }
+    .front__title {
+        font-size: clamp(1rem, 4vh, 1.5rem);
+    }
+    
+}
+    

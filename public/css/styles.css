@@ -1,0 +1,186 @@
+html body{
+    font-family: 'Itim', cursive;
+    text-align: center;
+}
+
+/* HEADINGS */
+h1{
+    text-align: left;
+    padding-top: 3%;
+    font-family: 'Merriweather', serif;
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: white;
+}
+h2{
+    font-family: 'Merriweather', serif;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    margin: 2% auto;
+}
+
+/* NAV_BAR */
+#userName{
+        font-style: oblique;
+        font-family: 'Merriweather', serif;
+}
+
+/* HOME */
+#home{
+    /* background-color: #FF8C8C; */
+    background-image: url("https://isteam.wsimg.com/ip/1b86a073-b289-4563-bd56-17d42114fd70/38846486_2694846990588464_8544528180566818816_.jpg");
+    background-size:cover;
+    height: 95vh;
+    font-size: clamp(1rem, 1vw, 2.5rem);
+}
+#home .container{
+    padding: 3% 7% 7%;
+}
+.nav__title{
+    color: white;
+    font-size: clamp(2rem, 2vw, 3rem);
+}
+
+.heading{
+    padding: 10% 0;
+}
+
+.weather__quote{
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-shadow: 1px 1px 2px rgb(209, 144, 144), 0 0 1em rgb(186, 186, 236), 0 0 0.2em rgb(245, 146, 237);
+    color: white;
+}
+
+.form {
+    margin: auto;
+    width: 60%;
+}
+.form-control{
+    margin: 3%;
+}
+
+.btn {
+    margin: 3% auto;
+}
+
+.form__text{
+    color: yellow;
+    width: 100%;
+    margin: 10% auto;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.gotoweather{
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgb(236, 211, 211), 0 0 1em rgb(147, 147, 180), 0 0 0.2em rgb(99, 99, 104);
+    width: 80%;
+}
+
+#carouselExampleSlidesOnly.carousel{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-top: 15%;
+    left: 50px;
+    width: 110%;
+}
+/* HOME */
+
+/* ACTIVITY */
+#activity{
+    padding: 15% 0;
+    background-color: #EFFFFD;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.activity__text{
+    padding: 5%;
+    width: 80%;
+    margin: auto;
+}
+
+.row{
+    margin: auto;  
+    padding: auto; 
+} 
+
+.card-container{
+    display: flex;
+}
+
+.card{
+    margin: 3% auto;
+}
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+}
+/* ACTIVITY */
+
+/* MAP and Weather */
+#map-weather{
+background-image: url("https://media.istockphoto.com/photos/aerial-view-of-sailing-luxury-yacht-at-opened-sea-at-sunny-day-in-picture-id1329335620?b=1&k=20&m=1329335620&s=170667a&w=0&h=HuH6t2BernrU0kzFWrcZ1YMMiWINiLQsu0O6BfeuNrY=");
+background-size: cover;
+font-size: clamp(1.5rem, 3vw, 2rem); 
+padding: 5%;
+}
+.weather_heading{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 3%;
+    margin: auto;
+}
+.forecast{
+    margin: 7% auto 0;
+    width: 100%;
+    font-size: clamp(3rem, 4vw, 4rem);
+}
+.descript{
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.map{
+    padding-top: 10%;
+}
+/* MAP and Weather */
+
+
+/* ITENARY */
+#itenary{
+    padding: 5% 3% 5%;
+    background-color: #EFFFFD;
+}
+/* ITENARY */
+
+/* BOOKING */
+#bookings{
+    background-color: #D6E5FA;
+    padding: 5%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.agency-img{
+    width: 50%;
+}
+
+/* BOOKING */
+
+/* FOOTER */
+footer{
+    padding: 3%;
+    background-color: #EFFFFD;
+    color: gray;
+}
+/* FOOTER */
+
+@media (max-width: 770px){
+    .form-cus{
+        right: 30%; 
+    }
+    .slider{
+        display: none;
+    }
+    
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }   
+}
+
+@media (max-width: 280px){
+    .map{
+        display: none;
+    }
+}
